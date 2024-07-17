@@ -1,3 +1,3 @@
-# template-react
+# Profile Blocklet
 
-A react template for creating a new blocklet project.
+
