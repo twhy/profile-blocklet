@@ -39,11 +39,3 @@ export function Button({
     </button>
   );
 }
-
-Button.defaultProps = {
-  type: 'normal',
-  loading: false,
-  disabled: false,
-  className: '',
-  onClick: () => {},
-};

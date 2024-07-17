@@ -53,11 +53,3 @@ export function Field({
     </div>
   );
 }
-
-Field.defaultProps = {
-  type: 'text',
-  error: false,
-  loading: false,
-  disabled: false,
-  onChange: () => {},
-};

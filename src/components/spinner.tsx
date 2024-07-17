@@ -18,7 +18,3 @@ export function Spinner({ className = 'text-cyan-500' }: SpinnerProps) {
     </svg>
   );
 }
-
-Spinner.defaultProps = {
-  className: 'text-cyan-500',
-};

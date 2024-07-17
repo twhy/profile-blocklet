@@ -6,7 +6,7 @@ import { User } from '../../shared/models/user';
 const db = {
   filename: 'database.json',
   path() {
-    return path.join(__dirname, `../${db.filename}`);
+    return path.join(__dirname, `../../${db.filename}`);
   },
   read() {
     return JSON.parse(fs.readFileSync(db.path()).toString()) as Database;
