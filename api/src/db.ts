@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { Database } from './type';
-import { User } from '../../shared/models/user';
+import { User } from './models/user';
 
 const db = {
   filename: 'database.json',

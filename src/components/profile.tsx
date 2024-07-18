@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { User, UserSchema } from '../../shared/models/user';
+import { User, UserSchema } from '../models/user';
 import { Field } from './field';
 import { Button } from './button';
 import useProfile from '../hooks/use-profile';

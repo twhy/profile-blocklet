@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import middleware from '@blocklet/sdk/lib/middlewares';
-import { User, UserSchema } from '../../../shared/models/user';
+import { User, UserSchema } from '../models/user';
 import db from '../db';
 
 const router = Router();

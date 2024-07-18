@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { User } from '../../shared/models/user';
+import { User } from '../models/user';
 import api from '../libs/api';
 
 export default function useProfile(id: string) {
