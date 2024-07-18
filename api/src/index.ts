@@ -10,6 +10,9 @@ import fallback from '@blocklet/sdk/lib/middlewares/fallback';
 
 import logger from './libs/logger';
 import routes from './routes';
+import db from './db';
+
+db.create();
 
 dotenv.config();
 

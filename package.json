@@ -9,7 +9,7 @@
     "clean": "node scripts/build-clean.mjs",
     "bundle": "tsc --noEmit && npm run bundle:client && npm run bundle:api",
     "bundle:client": "vite build",
-    "bundle:api": "npm run clean && tsc -p tsconfig.api.json && cp api/src/database.json api/dist && blocklet bundle --compact --create-release",
+    "bundle:api": "npm run clean && tsc -p tsconfig.api.json && blocklet bundle --compact --create-release",
     "deploy": "npm run bundle && blocklet deploy .blocklet/bundle --app-id zNKp5LsdZwp1ob2F6ehuQFuSaFysmi86U46k",
     "upload": "npm run bundle && blocklet upload .blocklet/release/blocklet.json",
     "prepare": "npx simple-git-hooks",

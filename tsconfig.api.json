@@ -5,5 +5,5 @@
     "noEmit": false,
     "noEmitOnError": true
   },
-  "include": ["api/*.d.ts", "api/src", "shared/models"]
+  "include": ["api/*.d.ts", "api/src"]
 }

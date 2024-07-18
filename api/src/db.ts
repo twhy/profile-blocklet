@@ -3,8 +3,24 @@ import path from 'path';
 import { Database } from './type';
 import { User } from './models/user';
 
+const database = {
+  users: [
+    {
+      id: '1',
+      login: 'twhy',
+      email: 'tom.wanghaiyi@gmail.com',
+      phone: '13825661360',
+    },
+  ],
+};
+
 const db = {
   filename: 'database.json',
+  create() {
+    if (!fs.existsSync(db.path())) {
+      fs.writeFileSync(db.path(), JSON.stringify(database, null, 2));
+    }
+  },
   path() {
     return path.join(__dirname, db.filename);
   },
